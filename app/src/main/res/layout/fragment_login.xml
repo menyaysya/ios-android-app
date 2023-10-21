@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    tools:context=".fragment.auth_fragments.LoginFragment">
+
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/logo" />
+    
+    <FrameLayout
+        android:id="@+id/login_email_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_stroke_gradient">
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/emailTitle"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white_light"
+            android:textColorHint="@color/white_hint"
+            android:textCursorDrawable="@drawable/cursor"
+            app:backgroundTint="@color/transparent"
+
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/login_pass_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_stroke_gradient">
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:layout_weight="1"
+        android:hint="@string/passwordTitle"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white_light"
+        android:textColorHint="@color/white_hint"
+        android:textCursorDrawable="@drawable/cursor"
+        app:backgroundTint="@color/transparent"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+        <ImageButton
+            android:id="@+id/showPassButton"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:background="@color/transparent"
+            android:contentDescription="@string/showpasswordbutton"
+            android:src="@drawable/baseline_remove_red_eye_24"
+            app:tint="@color/white_hint"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/forgotPass"
+        android:layout_gravity="end"
+        android:textColor="@color/white_light"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/main_button"
+        app:cornerRadius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/loginText"
+            android:textAlignment="center"
+            android:textColor="@color/white_light"
+            android:textSize="20dp"
+            tools:ignore="SpUsage,TextSizeCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/registration_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/empty_main_button"
+        app:cornerRadius="15dp">
+
+        <TextView
+            android:id="@+id/registration_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/registrationText"
+            android:textAlignment="center"
+            android:textColor="@color/edit_text_stroke"
+            android:textSize="18dp"
+            tools:ignore="SpUsage,TextSizeCheck,TextContrastCheck" />
+    </LinearLayout>
+
+
+</LinearLayout>

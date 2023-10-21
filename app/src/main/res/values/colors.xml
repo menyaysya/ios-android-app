@@ -2,4 +2,31 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_light">#EEEEEE</color>
+    <color name="white_hint">#CCCCCC</color>
+
+    <color name="main_bg_start">#212121</color>
+    <color name="main_bg_end">#423F3F</color>
+
+
+    <color name="progress_bar_color">#FFFFFFFF</color>
+
+    <color name="primary_text">#242424</color>
+    <color name="secondary_text_">#404040</color>
+    <color name="edit_text_hint">#404040</color>
+
+    <color name="main_button_start">#F06032</color>
+    <color name="main_button_end">#9A140C</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="edit_text_stroke">#c4391f</color>
+
+
+    <color name="swipe_refresh_color_bg">#DDDDDD</color>
+    <color name="swipe_refresh_color_A">#F06032</color>
+    <color name="swipe_refresh_color_B">#9A140C</color>
+
+
+    <color name="liked_color">#F06032</color>
+
 </resources>

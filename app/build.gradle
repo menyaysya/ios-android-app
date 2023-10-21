@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -33,6 +34,9 @@ android {
     }
     viewBinding {
         enabled = true
+    }
+    buildFeatures {
+        dataBinding true
     }
 }
 
@@ -68,4 +72,33 @@ dependencies {
 
     //Dialog
     implementation 'com.afollestad.material-dialogs:input:3.3.0'
+
+
+
+
+
+    //Firebase lib`s
+    //Firebase lib`s
+    implementation 'com.google.firebase:firebase-storage-ktx:20.3.0'
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-auth:22.2.0'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.9.0'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.3.0'
+
+
+
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+
+
+    //Image lib`s
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    implementation 'io.github.imablanco:zoomy:1.0.0'
+
 }

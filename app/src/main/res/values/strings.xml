@@ -1,3 +1,61 @@
 <resources>
     <string name="app_name">Uastrong</string>
+
+
+
+
+    <string name="Error">Сталася помилка</string>
+
+    <string name="data_saved">Дані збережено</string>
+
+
+
+    <string name="emailTitle">Електронна пошта</string>
+    <string name="passwordTitle">Пароль</string>
+    <string name="forgotPass">Забули пароль?</string>
+
+    <string name="loginText">Увійти</string>
+    <string name="registrationText">Створити аккаунт</string>
+    <string name="showpasswordbutton">showPasswordButton</string>
+    <string name="logo">logo</string>
+
+    <string name="ErrorText_Email">Необхідно ввести пошту</string>
+    <string name="ErrorText_Password">Необхідно ввести пароль</string>
+    <string name="ErrorText_Password_Confirm">Необхідно повторити пароль</string>
+
+
+    <string name="ErrorText_EmailNotCorrect">Пошта введена некоректно</string>
+    <string name="ErrorText_PasswordShort">Пароль занадто короткий</string>
+    <string name="EmailProblem">Код підтверждення було надіслано на вашу електронну адресу</string>
+    <string name="LoginError">Помилка входу, перевірте правильність введених данних</string>
+    <string name="ErrorText_Empty">Це поле не може бути пустим</string>
+
+
+    <string name="today">сьогодні</string>
+    <string name="yesterday">вчора</string>
+    <string name="comment_hint">Коментар</string>
+
+    <plurals name="count_comments">
+        <item quantity="one">%d коментар</item>
+        <item quantity="few">%d коментарі</item>
+        <item quantity="many">%d коментарів</item>
+        <item quantity="other">%d коментарів</item>
+    </plurals>
+
+    <string name="questionRemoveNews">Бажаєте видалити цей пост?</string>
+    <string name="answerNewsDeleted">Пост видалено!</string>
+
+    <string name="removeCommentQuestion">Бажаєте видалити коментар?</string>
+    <string name="commentRemovedAnswer">Коментар видалено!</string>
+    <string name="error_empty_post">Публікація не може бути пустою</string>
+    <string name="attach_photo">Додати фото</string>
+    <string name="create_post_publication_description_hint">Текст публікації</string>
+    <string name="create_post_publish_title">Опублікувати</string>
+    <string name="passwordConfirmTitle">Підтвердження паролю</string>
+    <string name="ErrorText_Passwords_Not_Compare">Паролі не збігаються</string>
+
+    <string name="registration_complete">Успішно зареєстровано</string>
+    <string name="forgotPasswordDescription">На вашу електронну адресу буде відправлено лист</string>
+    <string name="sendForgotPassMailTitle">Відправити листа</string>
+    <string name="EmailSent">Лист надіслано</string>
 </resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".fragment.feed.CreatePostFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/feed_background"
+            android:minHeight="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/create_post_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autofillHints="@color/secondary_text_"
+                android:gravity="start"
+                android:textColor="@color/primary_text"
+                android:textColorHighlight="@color/edit_text_hint"
+                android:textSize="@dimen/normal_text_size"
+                app:layout_constraintBottom_toBottomOf="@+id/create_post_avatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/create_post_avatar"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Заголовок" />
+
+            <ImageView
+                android:id="@+id/create_post_avatar"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/transparent"
+                android:src="@drawable/baseline_image_24"
+                app:civ_border_color="@color/white_light"
+                app:civ_border_width="@dimen/settings_user_photo_border"
+                app:layout_constraintEnd_toStartOf="@+id/create_post_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/create_post_divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_post_avatar" />
+
+            <LinearLayout
+                android:id="@+id/create_post_add_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/create_post_divider_1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_attach"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/create_post_avatar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:autofillHints="@color/"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:text="@string/attach_photo"
+                    android:textColor="@color/primary_text"
+                    android:textColorHint="@color/secondary_text_"
+                    android:textSize="@dimen/normal_text_size"
+                    app:backgroundTint="@color/secondary_text_"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/create_post_image" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/create_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+
+                android:adjustViewBounds="true"
+                android:src="@drawable/baseline_image_24"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/create_post_divider_1" />
+
+            <View
+                android:id="@+id/create_post_divider_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_post_image" />
+
+            <EditText
+                android:id="@+id/create_post_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:gravity="start"
+                android:hint="@string/create_post_publication_description_hint"
+                android:inputType="textMultiLine"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text_"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="@dimen/normal_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_post_divider_2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/create_post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/main_button"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_post_publish_title"
+            android:textColor="@color/secondary_text_"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

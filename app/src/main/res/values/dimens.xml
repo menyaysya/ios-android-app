@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settings_user_photo_width">54dp</dimen>
+    <dimen name="header_block_height">100dp</dimen>
+    <dimen name="settings_user_photo_border">2dp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="toolbar_user_photo_width">44dp</dimen>
+</resources>
