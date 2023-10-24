@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable button1
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id buttonTest
+id buttonText
+id dataContainer
+layout activity_main
+layout fragment_login
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string hello_blank_fragment
+string texttest
+style Base.Theme.TestOne
+style Theme.TestOne
+xml backup_rules
+xml data_extraction_rules
